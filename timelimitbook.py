@@ -70,8 +70,7 @@ def Entering_a_market(sell,stock,stock_price):
             if float(e)==float(j[0]):
                 if int(No_of_shares)<=int(j[1]):
                     data4[i]=[j[0],int(j[1])-int(No_of_shares)]
-                    print(data4)
-                    print(orderbookask)
+                    
                     return data4
     elif d=="buy":
         for i,j in data5.items():
@@ -82,7 +81,7 @@ def Entering_a_market(sell,stock,stock_price):
                     print("sdfjfsj")
                     data5[i]=[int(j[0])+int(No_of_shares),j[1]]
 
-                    print(orderbookbid)
+                    
                     return data5
 if __name__=="__main__":
     app.run(debug=True)
